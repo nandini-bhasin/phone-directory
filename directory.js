@@ -14,7 +14,7 @@ $("ul").on("click", "li", function(){
 $("ul").on("click", "span", function(event){
 	
 	//fade the parent of span in li
-	$(this).parent().fadeOut(function(){
+	$(this).parent().parent().fadeOut(function(){
 		//remove the li
 		$(this).remove();
 	});
