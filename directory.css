@@ -1,0 +1,139 @@
+
+/* File by Nandini Bhasin */
+/* Contact no: 9999759963 */
+/* Email ID: bhasin.nandini@gmail.com */
+
+
+:root{
+	--base-color: #ff005b;	/* Setting a color variable */
+}
+
+body{
+	background: #2BC0E4;  /* Fallback for old browsers */
+	background-image: linear-gradient(to left bottom, #fff200, #ffc200, #ff8e1a, #ff563f, #ff005b);	/* Background gradient */
+
+}
+
+/*main container*/
+#container{
+	background-color: #f7f7f7;
+	width: 60%;
+	margin: 100px auto;
+	box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.5);
+	font-family: 'Roboto', sans-serif;
+}
+
+/*heading, including the edit icon*/
+h1{
+	background-color: var(--base-color);
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: bold;
+	border: 1px solid #99083C;
+}
+
+/*edit icon*/
+.fa-pencil{
+	float: right;
+}
+
+.fa-pencil:hover{
+	cursor: pointer;
+	color: yellow;
+}
+
+/*list*/
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*individual list item*/
+li {
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+/*every second list item*/
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+/*trash icon inside span*/
+li span {	
+	margin: auto;
+	margin-right: 20px;
+	text-align: center;
+	color: red;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+	cursor: pointer;
+}
+
+/*parent class inside each list item*/
+.wrapper{
+	display: flex;
+}
+
+.wrapper div {
+	width: 50%;
+}
+
+/*checked items in list*/
+.completed{
+	color: grey;
+	text-decoration: line-through;
+}
+
+/*input boxes for name and number*/
+input{
+	font-size: 18px;
+	background-color: #f7f7f7;
+	width: 43%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: #2980b9;
+	border: 1px solid grey;
+	border-style: solid;
+	border-radius: 10px;
+	margin: 3px;
+}
+
+input:focus, input:hover{
+	background-color: white;
+	border: 2px solid var(--base-color);
+	outline: none;
+}
+
+/*button to submit the values of input fields*/
+button {
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #ffffff;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	color: var(--base-color);
+	width: 10%;
+	border-radius: 10px;
+	border: 2px solid var(--base-color);
+	border-style: solid;
+	margin: 3px;
+}
+
+button:hover{
+	background: var(--base-color);
+	color: white;
+	cursor: pointer;
+}
